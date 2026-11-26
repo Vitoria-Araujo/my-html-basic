@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Formulário</title>
+  </head>
+
+  <body>
+    <h1>Formulário aqui</h1>
+
+    <!-- Início do formulário -->
+    <form action="">
+      <!-- Rótulo do campo de nome: o for aponta para o id do input -->
+      <label for="campo_nome">Nome:</label>
+
+      <!-- Campo para digitar o nome -->
+      <input
+        type="text"
+        name="nome"
+        id="campo_nome"
+        placeholder="Digite seu nome aqui"
+      />
+
+      <br /><br />
+
+      <!-- Rótulo do campo de senha -->
+      <label for="campo_senha">Senha:</label>
+
+      <!-- Campo de senha: os caracteres digitados ficam ocultos -->
+      <input
+        type="password"
+        name="senha"
+        id="campo_senha"
+        placeholder="Digite sua senha"
+        required
+      />
+
+      <br /><br />
+
+      <!-- Rótulo do campo de e-mail -->
+      <label for="campo_email">E-mail:</label>
+
+      <!-- Campo de e-mail: o navegador verifica o formato do endereço -->
+      <input
+        type="email"
+        name="email"
+        id="campo_email"
+        placeholder="Digite seu e-mail"
+        required
+      />
+
+      <br /><br />
+
+      <!-- Botão para enviar o formulário -->
+      <input type="submit" value="Enviar formulário" required />
+    </form>
+
+    <hr />
+
+    <h2>Animal de estimação</h2>
+    <input type="radio" name="animal" id="dog" />
+    <label for="dog">Cachorro</label><br /><br />
+
+    <input type="radio" name="animal" id="cat" value="Gato" />
+    <label for="cat">Gato</label><br /><br />
+
+    <input type="radio" name="animal" id="bird" value="Passaro" />
+    <label for="bird">Passarinho</label><br /><br />
+
+    <input id="item1" type="checkbox" name="item1" value="TV" />
+    <label for="item1">TV</label><br /><br />
+
+    <input id="item2" type="checkbox" name="item2" value="Geladeira" />
+    <label for="item2">Geladeira</label><br /><br />
+
+    <input id="item3" type="checkbox" name="item3" value="Computador" />
+    <label for="item3">Computador</label><br /><br />
+
+    <h2>Escolha uma cor</h2>
+    <select name="cores">
+        <option selected disabled>Selecione uma cor</option>
+      <option value="vermelho">Vermelho</option>
+      <option value="azul">Azul</option>
+      <option value="amarelo">Amarelo</option>
+      <option value="verde">Verde</option>
+    </select><br><br>
+    <textarea
+  name="mensagem"
+  placeholder="mensagem mensagem"
+  rows="15"
+  cols="55"
+></textarea><br><br>
+<button>Enviar tudo</button><br><br>
+
+
+    <!-- Link para voltar à página inicial -->
+    <a href="index.html">Voltar para a página inicial</a>
+  </body>
+</html>
